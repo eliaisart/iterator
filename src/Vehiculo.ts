@@ -1,4 +1,4 @@
-import { Elemento } from "./Elemento";
+import { Elemento } from "./Elemento.js";
 
 export class Vehiculo extends Elemento{
     constructor(){

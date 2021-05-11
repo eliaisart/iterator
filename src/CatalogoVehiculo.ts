@@ -1,9 +1,13 @@
-import { Catalogo } from "./Catalogo";
-import { Vehiculo } from "./Vehiculo";
+import { Catalogo } from "./Catalogo.js";
+import { IteradorVehiculo } from "./IteradorVehiculo.js";
+import { Vehiculo } from "./Vehiculo.js";
 
 export class CatalogoVehiculo extends Catalogo{
+    contenido = new Array<Vehiculo> ();
+    
     creaIterator(){
         //retorna una instancia a un elemento IteradorVehiculo
+        return new IteradorVehiculo();
     }
 
     CreaCatalogoVehiculo(){

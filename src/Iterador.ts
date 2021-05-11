@@ -1,5 +1,5 @@
-import { Elemento } from "./Elemento";
-import { Vehiculo } from "./Vehiculo";
+import { Elemento } from "./Elemento.js";
+import { Vehiculo } from "./Vehiculo.js";
 
 export abstract class Iterador extends Elemento{
     protected contenido = new Array<Vehiculo> ();
