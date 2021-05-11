@@ -10,8 +10,8 @@ export abstract class Elemento{
     palabraClaveValida(palabra:string){
         //devuelve cierto si la palabra pasada como parametro se encuentra en la descripcion o falso en caso contrario
         if (this.desc == palabra){
-            return true
+            return true;
         }
-       return false;
+        return false;
     }
 }

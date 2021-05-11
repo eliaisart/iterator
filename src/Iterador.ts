@@ -14,15 +14,21 @@ export abstract class Iterador extends Elemento{
 
     inicio(){
         //coloca el indice del array de vehiculos en el primer elemento que cumple con el filtro(elemento con la palabra de busqueda)
-        
+        this.indice = 0;
     }
 
     siguiente(){
         //coloca el indice del array de vehiculos en el siguiente elemento que cumple con la condicion de filtro
+        this.indice = this.indice + 1;
     }
 
     item(){
         //retorna el vehiculo donde se encuentra el indice si esta indice es valido(dentro del array de vehiculos). en otro caso devuelve null
+        if(this.indice >= this.contenido.length){
+            return null;
+        }else{
+            return this.contenido[this.indice];
+        }
     }
 
 }
