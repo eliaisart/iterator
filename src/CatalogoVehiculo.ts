@@ -7,7 +7,7 @@ export class CatalogoVehiculo extends Catalogo{
     
     creaIterator(){
         //retorna una instancia a un elemento IteradorVehiculo
-        return new IteradorVehiculo();
+        return new IteradorVehiculo(this.desc);
     }
 
     CreaCatalogoVehiculo(){

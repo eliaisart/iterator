@@ -9,14 +9,14 @@ export abstract class Catalogo extends Elemento{
 
     creaIterator(){
         //retorna un IteradorVehiculo
-        return new IteradorVehiculo();
+        return new IteradorVehiculo(this.desc);
     }
     
     busqueda(palabra: string): Iterador{
         //crea el iterador y llama al metodo setPalabraConsulta
         //le pasa como parametros palabra y array de vehiculos
         //posteriormente retorna el iterador creado
-        let it = new IteradorVehiculo();
+        let it = new IteradorVehiculo(this.desc);
         it.setPalabraConsulta(palabra, this.listavehiculos);
         return it;
     }

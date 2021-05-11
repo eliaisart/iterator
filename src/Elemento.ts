@@ -1,10 +1,9 @@
 export abstract class Elemento{
-
     protected desc:string;
 
-    constructor(){
+    constructor(desc: string){
         //pasar como parametro opcional una descripcion
-        this.desc;
+        this.desc = desc;
     }
 
     palabraClaveValida(palabra:string){

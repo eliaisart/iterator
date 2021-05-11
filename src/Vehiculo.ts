@@ -1,8 +1,8 @@
 import { Elemento } from "./Elemento.js";
 
 export class Vehiculo extends Elemento{
-    constructor(){
-        super();
+    constructor(desc:string){
+        super(desc);
     }
 
     visualiza(){
