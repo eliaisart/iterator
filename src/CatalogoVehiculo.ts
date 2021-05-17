@@ -16,6 +16,12 @@ export class CatalogoVehiculo extends Catalogo{
     }
 
     muestraCatalogo() {
-        throw new Error("Method not implemented.");
+        
+        for (var i=0;i<this.contenido.length;i++){ 
+            document.write("Contenido de los vehiculos:") 
+            document.write("<br>") 
+            document.write("Descripción del vehiculo: " + this.contenido[i]) 
+            document.write("<br>") 
+     }
     }
 }
