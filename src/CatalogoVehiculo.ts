@@ -13,15 +13,27 @@ export class CatalogoVehiculo extends Catalogo{
     CreaCatalogoVehiculo(){
         //se crea manualmente el catalogo aqui
         this.contenido.push (new Vehiculo ("Toyota Yaris"));
+        this.contenido.push (new Vehiculo ("Renault Clio"));
+        this.contenido.push (new Vehiculo ("Toyota Prius"));
+        this.contenido.push (new Vehiculo ("Renault Laguna"));
+        this.contenido.push (new Vehiculo ("Seat Leon"));
+        this.contenido.push (new Vehiculo ("Renault Megane"));
+        this.contenido.push (new Vehiculo ("Toyota Corola"));
     }
 
     muestraCatalogo() {
         
         for (var i=0;i<this.contenido.length;i++){ 
-            document.write("Contenido de los vehiculos:") 
-            document.write("<br>") 
-            document.write("Descripción del vehiculo: " + this.contenido[i]) 
-            document.write("<br>") 
-     }
+            console.log ("Descripción del vehiculo: ");
+            console.log (this.contenido[i]);
+        }
+        // this.contenido.forEach(function(elemento, indice, array) {
+        //     console.log("Descripción del vehiculo: ");
+        //     console.log(elemento);
+            
+        // })
+
+        //this.contenido.forEach(vehiculo => console.log(vehiculo))
+        
     }
 }
