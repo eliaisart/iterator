@@ -22,7 +22,8 @@ export class CatalogoVehiculo extends Catalogo {
     }
     muestraCatalogo() {
         for (var i = 0; i < this.contenido.length; i++) {
-            console.log("Descripción del vehiculo: " + this.contenido[i].visualiza());
+            let desc = this.contenido[i].visualiza();
+            console.log("Descripción del vehiculo: " + desc);
         }
     }
 }
