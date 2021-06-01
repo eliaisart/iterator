@@ -15,19 +15,16 @@ export abstract class Catalogo extends Elemento{
         //posteriormente retorna el iterador creado
         let it = new IteradorVehiculo();
         it.setPalabraConsulta(palabra, this.listavehiculos);
-        /*
+        
         if(this.listavehiculos[0]){
             console.log("Mostrando el primer vehiculo con la palabra: " + palabra);
-            console.log("Descripcion del vehiculo: "+ this.listavehiculos[0].visualiza());
-        }   
-        else{
-            for(let i=0; i <= this.listavehiculos.length; i++){
+            this.listavehiculos[0].visualiza();
+            for(let i=0; i < this.listavehiculos.length; i++){
                 console.log("Mostrando el siguiente vehiculo con la palabra: " + palabra);
-                console.log("Descripcion del vehiculo: "+ this.listavehiculos[i].visualiza());
+                this.listavehiculos[i].visualiza();
+                //fer un bucle que recorri els elements que portin palabra (sino surten tots)
             }
         } 
-        */
-        
         //console.log(palabra);
         return it;
     }
