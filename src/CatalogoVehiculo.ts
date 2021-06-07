@@ -11,10 +11,11 @@ export class CatalogoVehiculo extends Catalogo{
 
     CreaCatalogoVehiculo(){
         //se crea manualmente el catalogo aqui
-        this.listavehiculos.push (new Vehiculo ("Toyota Yaris"));
+        // this.listavehiculos.push (new Vehiculo ("Toyota Yaris"));
         this.listavehiculos.push (new Vehiculo ("Renault Clio"));
         this.listavehiculos.push (new Vehiculo ("Toyota Prius"));
         this.listavehiculos.push (new Vehiculo ("Renault Laguna"));
+        this.listavehiculos.push (new Vehiculo ("Toyota Yaris"));
         this.listavehiculos.push (new Vehiculo ("Seat Leon"));
         this.listavehiculos.push (new Vehiculo ("Renault Megane"));
         this.listavehiculos.push (new Vehiculo ("Toyota Corola"));

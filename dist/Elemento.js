@@ -5,8 +5,8 @@ export class Elemento {
     }
     palabraClaveValida(palabra) {
         //devuelve cierto si la palabra pasada como parametro se encuentra en la descripcion o falso en caso contrario
-        let nose = this.desc.search(palabra);
-        if (nose == -1) {
+        let key = this.desc.search(palabra);
+        if (key == -1) {
             return false;
         }
         return true;
